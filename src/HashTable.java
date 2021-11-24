@@ -257,10 +257,11 @@ public class HashTable implements IHashTable {
         //Lecture Slide 22
         int hashValue = 0;
         for(int i = 0; i <value.length(); i++){
+            //left shift
             int leftShiftedValue = hashValue << 5;
-
+            //right shift
             int rightShiftedValue = hashValue >>> 27;
-
+            // | is bitwise OR, ^ is bitwise XOR
             hashValue = (leftShiftedValue | rightShiftedValue) ^ value.charAt(i);
         }
         return Math.abs(hashValue) % capacity();
