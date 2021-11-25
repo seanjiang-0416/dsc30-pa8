@@ -90,7 +90,7 @@ public class HashTable implements IHashTable {
         //the loop will break when it encounters
         //either BRIDGE or null
         while(table[idx] != null){
-            if(table[idx].equals(BRIDGE)){
+            if(table[idx] == BRIDGE){
                 break;
             }
             if(idx == table.length-1){
