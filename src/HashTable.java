@@ -203,7 +203,7 @@ public class HashTable implements IHashTable {
         /* TODO */
         String output = "";
         for (int i = 0; i < rehash_stats.size(); i++) {
-            output += String.format("Before rehashing # %d: load factor %.2f, %d collision(s)\n"
+            output += String.format("Before rehash # %d: load factor %.2f, %d collision(s).\n"
                     , rehash_stats.get(i), load_factor_stats.get(i), num_collision_stats.get(i));
         }
 

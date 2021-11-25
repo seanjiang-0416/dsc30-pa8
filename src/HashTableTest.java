@@ -229,8 +229,8 @@ public class HashTableTest {
         test_3.insert("bunny");
         test_3.insert("sad");
         test_3.insert("cheese");
-        String expected = "Before rehashing # 1: load factor 0.60, 0 collision(s)\n" +
-                "Before rehashing # 2: load factor 0.60, 3 collision(s)\n";
+        String expected = "Before rehash # 1: load factor 0.60, 0 collision(s).\n" +
+                "Before rehash # 2: load factor 0.60, 3 collision(s).\n";
         assertEquals(expected, test_3.getStatsLog());
     }
 
@@ -244,7 +244,7 @@ public class HashTableTest {
         test_3.insert("funny");
         test_3.insert("jam");
         test_3.insert("pig");
-        String expected = "Before rehashing # 1: load factor 0.60, 2 collision(s)\n";
+        String expected = "Before rehash # 1: load factor 0.60, 2 collision(s).\n";
         assertEquals(expected, test_3.getStatsLog());
     }
 
@@ -255,7 +255,7 @@ public class HashTableTest {
         test_3.insert("bottle");
         test_3.insert("opiums");
         test_3.insert("cool");
-        String expected = "Before rehashing # 1: load factor 0.60, 1 collision(s)\n";
+        String expected = "Before rehash # 1: load factor 0.60, 1 collision(s).\n";
         assertEquals(expected, test_3.getStatsLog());
     }
 
